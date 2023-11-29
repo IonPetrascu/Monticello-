@@ -1,146 +1,179 @@
 @use "../base/variables" as *;
 
-.banner{
-   z-index: 1;
+.banner {
+    z-index: 1;
     overflow: hidden;
 }
-.slick{
+
+.slick {
     height: 100vh;
-    background:linear-gradient(243deg, #7E5AFF 16.9%, #55B7FF 83.27%),url(/img/banner-bg.png);
+    background: linear-gradient(243deg, #7E5AFF 16.9%, #55B7FF 83.27%), url(/img/banner-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .banner__title {
+    color: $white;
+    font-family: $font-main;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
 }
+
 .banner__subtitle {
+    color: $white;
+    font-family: $font-main;
+    font-size: 18px;
+    letter-spacing: 5.4px;
 }
 
 
-main{
-   
-}
+main {}
+
 /* Основные стили */
 
 /* Слайдер */
-.slick-slider{
-	min-width: 0;
+.slick-slider {
+    min-width: 0;
 }
+
 /* Ограничивающая оболочка */
 .slick-list {
-	overflow: hidden;
+    overflow: hidden;
 }
+
 /* Лента слайдов */
-.slick-track{
+.slick-track {
     height: 100vh !important;
-	display: flex;
-	align-items: flex-start;
+    display: flex;
+    align-items: flex-start;
     height: 800px;
 }
 
 /* Слайд */
-.slick-slide{
-   
-}
+.slick-slide {}
+
 /* Слайд активный */
-.slick-slide.slick-active{}
+.slick-slide.slick-active {}
+
 /* Слайд основной */
-.slick-slide.slick-current{}
+.slick-slide.slick-current {}
+
 /* Слайд по центру */
-.slick-slide.slick-center{}
+.slick-slide.slick-center {}
 
 /* Стрелка */
-.slick-arrow{}
+.slick-arrow {}
+
 /* Стрелка влево */
-.banner .slick-prev{
+.banner .slick-prev {
     display: none !important;
 }
+
 /* Стрелка вправо */
-.banner .slick-next{
-   
-}
+.banner .slick-next {}
+
 /* Стрелка не активная */
-.slick-arrow.slick-disabled{}
+.slick-arrow.slick-disabled {}
 
 /* Точки */
-.slick-dots{}
-.slick-dots li{}
-.slick-dots button{}
+.slick-dots {}
+
+.slick-dots li {}
+
+.slick-dots button {}
 
 /* Конкретный слайдер */
 .slider {
-	position: relative;
-	padding: 0px 60px;
+    position: relative;
+    padding: 0px 60px;
 }
 
-@media (max-width:767px){
-	.slider {
-		padding: 0px 40px;
-	}
+@media (max-width:767px) {
+    .slider {
+        padding: 0px 40px;
+    }
 }
 
-.slider .slick-arrow{
-	
+.slider .slick-arrow {}
+
+.slider .slick-arrow.slick-next {
+    right: 0;
+    background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
 }
 
-.slider .slick-arrow.slick-next{
-	right: 0;
-	background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
-}
-.banner .slick-dots > li > button{
-	
+.banner .slick-dots>li>button {
+
     font-size: 0;
 }
 
-.banner .slick-dots{
-	position: absolute;
+.banner .slick-dots {
+    position: absolute;
     top: 50%;
     right: 52px;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     gap: 40px;
-   
+
 }
-.slider .slick-dots li{
-	list-style: none;
-	
+
+.slider .slick-dots li {
+    list-style: none;
+
 }
-.banner .slick-dots button{
-	font-size: 0;
-	width: 10px;
-	height: 10px;
-	background-color: transparent;
-	border-radius: 50%;
+
+.banner .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
     padding: 0;
 }
 
-.slider .slick-dots li.slick-active button{
-	
-	border: 1px solid #fff;
+.slider .slick-dots li.slick-active button {
+
+    border: 1px solid #fff;
 }
 
-.slider__item {
-	
-}
-.slider__item img{
-	max-width: 100%;
-}
-.slider__item.slick-center{
-	
+.slider__item {}
+
+.slider__item img {
+    max-width: 100%;
 }
 
-.banner .slick-dots li > button{
+.slider__item.slick-center {}
+
+.banner .slick-dots li>button {
     background-color: transparent;
     width: 10px;
     height: 10px;
     border: 1px solid $white;
     border-radius: 50%;
 }
-.banner .slick-dots >.slick-active > button{
-   background-color: $white;
+
+.banner .slick-dots>.slick-active>button {
+    background-color: $white;
+}
+
+.banner .slick-next {
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $white;
+    font-size: 0px;
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+
 }

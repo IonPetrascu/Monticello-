@@ -161,6 +161,26 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.banner__title {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+}
+
+.banner__subtitle {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  letter-spacing: 5.4px;
 }
 
 /* Основные стили */
@@ -266,4 +286,19 @@ body {
 
 .banner .slick-dots > .slick-active > button {
   background-color: #fff;
+}
+
+.banner .slick-next {
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  font-size: 0px;
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50%;
 }
