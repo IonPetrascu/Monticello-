@@ -1,0 +1,61 @@
+@use "../base/variables" as *;
+
+
+#header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+}
+
+.wrapper {
+    padding-top: 53px;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {}
+
+.header__nav {}
+
+.header__items {
+    display: flex;
+    gap: 93px;
+}
+
+.social__circle {
+    border-radius: 50%;
+    border: 1px solid $white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__item {
+    font-family: $font-accent;
+
+
+}
+
+.header__link {
+    color: inherit;
+}
+
+.header__social {
+    display: flex;
+    gap: 47px;
+}
+
+.fa-brands {}
+
+.fa-facebook-f {}
+
+.fa-twitter {}
+
+.fa-instagram {}
