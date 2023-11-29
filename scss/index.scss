@@ -1,5 +1,6 @@
 //Base
 
+
 @use './base/normalize';
 @use './base/variables';
 @use './base/mixins';
@@ -11,3 +12,4 @@
 //Blocks
 @use '../scss/blocks/header';
 @use '../scss/blocks/banner';
+@use '../scss/blocks/projects';

@@ -3,6 +3,7 @@
 .banner {
     z-index: 1;
     overflow: hidden;
+   
 }
 
 .slick {
@@ -171,9 +172,12 @@ main {}
     font-size: 0px;
     background: transparent;
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 50%;
 
+}
+.banner .slick-next  {
+  
 }

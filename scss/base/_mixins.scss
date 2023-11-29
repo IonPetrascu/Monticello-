@@ -1,18 +1,30 @@
+@use "variables" as *;
+
 //Mixins
-@mixin large-text{
-    font-family: Arial;
-    size: 30px;
-    font-weight: bold;
+@mixin title {
+    color: $main-color;
+    font-family: $font-main;
+    font-size: 44px;
+    font-weight: 700;
+
 }
 
-@mixin my-border($color,$width){
-    border-color:$color;
-    border-width: $width;
-    border-style: solid;
-    
-}
-p{
-   // @include my-border(red,2px );
-   font-size: 20px;
+@mixin description {
+    color: $main-color;
+    font-family: $font-secondary;
+    font-size: 18px;
+    font-weight: 400;
+    color: $main-color;
+
 }
 
+
+@mixin btn-default($pad-top, $pad-bottom) {
+    padding: $pad-top $pad-bottom;
+    color: $black;
+    font-family: $font-main;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid $main-color;
+
+}
