@@ -1,0 +1,257 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.news {
+  
+    background: linear-gradient(237deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+   height: 1035px;
+
+
+}
+
+.news__wrapper {
+    max-width: 1190px;
+    padding: 185px 10px 213px 10px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.news__title {
+    @include title();
+    color: $main-color;
+    text-align: center;
+    margin-bottom: 89px;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 1px;
+        background-color: $main-color;
+    }
+}
+
+.slider {
+    padding: 0;
+}
+
+.slide {
+
+    width: 360px;
+  background-color: $white;
+}
+
+.news {}
+
+.news__wrapper {}
+
+.news__title {}
+
+.slider {
+    position: initial;
+}
+
+.slide {
+    width: 370px;
+
+    .post__img {
+        width: 100%;
+    }
+
+    h3 {
+        color: $main-color;
+        font-family: $font-main;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    p {
+        @include description();
+        margin-bottom: 40px;
+    }
+}
+
+.post__info {
+    padding: 30px 20px;
+}
+
+.news__user-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.user__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    
+}
+
+.user__text {
+   display: flex;
+   flex-direction: column;
+}
+
+.user__Name {
+    color: $main-color;
+    font-family: $font-main;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 6px;
+
+}
+
+.user__date-post {
+    color: $bg-blue;
+    font-family: $font-main;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+
+
+
+
+/* Слайдер */
+.news .slick-slider {}
+
+/* Слайдер запущен */
+.news .slick-slider.slick-initialized {}
+
+/* Слайдер с точками */
+.news .slick-slider.slick-dotted {}
+
+/* Ограничивающая оболочка */
+.news .slick-list {}
+
+/* Лента слайдов */
+.news .slick-track {
+    display: flex;
+    align-items:stretch;
+    gap: 30px;
+    height: auto !important;
+}
+
+/* Слайд */
+.news .slick-slide {}
+
+/* Слайд активный (показывается) */
+.news .slick-slide.slick-active {}
+
+/* Слайд основной */
+.news .slick-slide.slick-current {}
+
+/* Слайд по центру */
+.news .slick-slide.slick-center {}
+
+/* Клонированный слайд */
+.news .slick-slide.slick-cloned {}
+
+/* Стрелка */
+.news .slick-arrow {
+    
+}
+.news .slick-dots{
+    position: absolute;
+    bottom: 143px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 40px;
+}
+.news .slick-dots li button{
+    background: transparent;
+    width: 10px;
+    height: 10px;
+    border: 1px solid $white;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.news .slick-dots .slick-active button{
+    background-color: $white;
+}
+
+
+
+
+
+
+/* Стрелка влево */
+.fa-solid{
+    font-size: 13px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border: 1px solid $white;
+    border-radius: 50%;
+}
+.fa-angle-right::before,.fa-angle-left::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: $white;
+}
+.news .slick-arrow.slick-prev{
+   font-size: 20px;
+}
+.news .priv-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -78px;
+    cursor: pointer;
+}
+.news .next-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -78px;
+    cursor: pointer;
+
+}
+
+/* Стрелка вправо */
+.news .slick-arrow.slick-next {
+width: 40px;
+    height: 40px;
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+ 
+}
+
+
+
+
+
+
+/* Стрелка не активная */
+.news .slick-arrow.slick-disabled {}
+
+/* Точки (булиты) */
+.news .slick-dots {}
+
+.news .slick-dots li {}
+
+/* Активная точка */
+.news .slick-dots li.slick-active {}
+
+/* Элемент точки */
+.news .slick-dots li button {}

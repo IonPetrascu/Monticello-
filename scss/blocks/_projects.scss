@@ -1,7 +1,9 @@
 @use "../base/variables" as *;
 @use "../base/mixins" as *;
 
-
+.projects{
+    overflow: hidden;
+}
 
 .projects__wrapper {
     padding-top: 130px;

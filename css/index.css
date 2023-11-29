@@ -228,7 +228,6 @@ body {
 }
 .slider .slick-arrow.slick-next {
   right: 0;
-  background: url("../img/sl-arrow_r.svg") 0 0/100% no-repeat;
 }
 
 .banner .slick-dots > li > button {
@@ -297,6 +296,10 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   border-radius: 50%;
+}
+
+.projects {
+  overflow: hidden;
 }
 
 .projects__wrapper {
@@ -443,3 +446,229 @@ body {
   background-color: #7E5AFF;
   z-index: -1;
 }
+
+.news {
+  background: linear-gradient(237deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+  height: 1035px;
+}
+
+.news__wrapper {
+  max-width: 1190px;
+  padding: 185px 10px 213px 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.news__title {
+  color: #2C4058;
+  font-family: "Montserrat", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  color: #2C4058;
+  text-align: center;
+  margin-bottom: 89px;
+  position: relative;
+}
+.news__title:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100px;
+  height: 1px;
+  background-color: #2C4058;
+}
+
+.slider {
+  padding: 0;
+}
+
+.slide {
+  width: 360px;
+  background-color: #fff;
+}
+
+.slider {
+  position: initial;
+}
+
+.slide {
+  width: 370px;
+}
+.slide .post__img {
+  width: 100%;
+}
+.slide h3 {
+  color: #2C4058;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.slide p {
+  color: #2C4058;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #2C4058;
+  margin-bottom: 40px;
+}
+
+.post__info {
+  padding: 30px 20px;
+}
+
+.news__user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.user__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.user__Name {
+  color: #2C4058;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.user__date-post {
+  color: #55B7FF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+/* Лента слайдов */
+.news .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 30px;
+  height: auto !important;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+.news .slick-dots {
+  position: absolute;
+  bottom: 143px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+.news .slick-dots li button {
+  background: transparent;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 0;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.news .slick-dots .slick-active button {
+  background-color: #fff;
+}
+
+/* Стрелка влево */
+.fa-solid {
+  font-size: 13px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.fa-angle-right::before, .fa-angle-left::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.news .slick-arrow.slick-prev {
+  font-size: 20px;
+}
+
+.news .priv-arrow {
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -78px;
+  cursor: pointer;
+}
+
+.news .next-arrow {
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -78px;
+  cursor: pointer;
+}
+
+/* Стрелка вправо */
+.news .slick-arrow.slick-next {
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
