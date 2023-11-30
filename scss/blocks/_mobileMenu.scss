@@ -3,12 +3,14 @@
 
 
 .burger {
-    width: 30px;
-    height: 30px;
+    display: none;
+    width: 40px;
+    height: 40px;
     align-items: center;
     position: relative;
     flex-direction: column;
     cursor: pointer;
+    z-index: 101;
 }
 
 .burger-line {
@@ -54,3 +56,10 @@
 .burger.active .burger-line {
     transform: scale(0);
 }
+
+//meadia
+@media screen and (max-width: 1100px) {
+   .burger{
+    display: block;
+   }
+  }

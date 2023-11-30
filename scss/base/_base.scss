@@ -8,6 +8,7 @@ a{
 body{
     font-size: 14px;
     font-weight: 400;
+    
 }
 .wrapper{
     max-width: 1190px;
@@ -16,4 +17,8 @@ body{
 }
 main{
     position: relative;
+}
+
+.none{
+    display: none;
 }

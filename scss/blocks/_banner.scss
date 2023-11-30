@@ -2,7 +2,7 @@
 
 .banner {
     z-index: 1;
-    overflow: hidden;
+   /*  overflow: hidden; */
     position: relative;
    
 }
@@ -22,7 +22,7 @@
 .banner__title {
     color: $white;
     font-family: $font-main;
-    font-size: 80px;
+    font-size: clamp(2.188rem, 3.169vw + 1.197rem, 5rem);
     font-weight: 700;
     letter-spacing: 8px;
     margin-bottom: 20px;
@@ -31,7 +31,7 @@
 .banner__subtitle {
     color: $white;
     font-family: $font-main;
-    font-size: 18px;
+    font-size: clamp(1.063rem, 0.07vw + 1.04rem, 1.125rem);
     letter-spacing: 5.4px;
 }
 
@@ -132,6 +132,30 @@
    top: 860px;
    left: 50%;
    transform: translateX(-50%);
-   z-index: 66;
+   z-index: 3;
    cursor: pointer;
+}
+
+//media 
+
+@media screen and (max-width: 600px) {
+   .banner__title{
+    line-height: 60px;
+    text-align: center;
+    padding: 0px 20px;
+   }
+   .banner__subtitle {
+    text-align: center;
+    line-height: 25px;
+   }
+   .banner .slick-dots{
+    right: 25px;
+    top: 40%;
+   }
+   .slick{
+    height: 70vh;
+   }
+   .banner__btn{
+    top: 470px;
+   }
 }
