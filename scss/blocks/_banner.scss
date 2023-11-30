@@ -3,6 +3,7 @@
 .banner {
     z-index: 1;
     overflow: hidden;
+    position: relative;
    
 }
 
@@ -35,21 +36,13 @@
 }
 
 
-main {}
 
-/* Основные стили */
 
-/* Слайдер */
-.slick-slider {
-    min-width: 0;
-}
 
-/* Ограничивающая оболочка */
 .slick-list {
     overflow: hidden;
 }
 
-/* Лента слайдов */
 .slick-track {
     height: 100vh !important;
     display: flex;
@@ -57,44 +50,8 @@ main {}
     height: 800px;
 }
 
-/* Слайд */
-.slick-slide {}
 
-/* Слайд активный */
-.slick-slide.slick-active {}
 
-/* Слайд основной */
-.slick-slide.slick-current {}
-
-/* Слайд по центру */
-.slick-slide.slick-center {}
-
-/* Стрелка */
-.slick-arrow {}
-
-/* Стрелка влево */
-.banner .slick-prev {
-    display: none !important;
-}
-
-/* Стрелка вправо */
-.banner .slick-next {}
-
-/* Стрелка не активная */
-.slick-arrow.slick-disabled {}
-
-/* Точки */
-.slick-dots {}
-
-.slick-dots li {}
-
-.slick-dots button {}
-
-/* Конкретный слайдер */
-.slider {
-    position: relative;
-    padding: 0px 60px;
-}
 
 @media (max-width:767px) {
     .slider {
@@ -102,12 +59,7 @@ main {}
     }
 }
 
-.slider .slick-arrow {}
 
-.slider .slick-arrow.slick-next {
-    right: 0;
-    //background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
-}
 
 .banner .slick-dots>li>button {
 
@@ -144,13 +96,12 @@ main {}
     border: 1px solid #fff;
 }
 
-.slider__item {}
+
 
 .slider__item img {
     max-width: 100%;
 }
 
-.slider__item.slick-center {}
 
 .banner .slick-dots li>button {
     background-color: transparent;
@@ -164,20 +115,23 @@ main {}
     background-color: $white;
 }
 
-.banner .slick-next {
-    background-color: red;
-    width: 40px;
-    height: 40px;
-    border: 1px solid $white;
-    font-size: 0px;
-    background: transparent;
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 50%;
 
+.banner .slick-prev  {
+  display: none !important;
 }
 .banner .slick-next  {
-  
+  display: none !important;
+}
+
+.banner__btn{
+   padding: 12px 15px;
+   border: 1px solid $white;
+   border-radius: 50%;
+   background: transparent;
+   position: absolute;
+   top: 860px;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 66;
+   cursor: pointer;
 }

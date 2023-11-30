@@ -21,13 +21,13 @@
                         <a class="header__link" href="#">ABOUT US</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__link" href="#">PROJECTS</a>
+                        <a class="header__link" href="#projects">PROJECTS</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__link" href="#">NEWS</a>
+                        <a class="header__link" href="#news">NEWS</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__link" href="#">CONTACT</a>
+                        <a class="header__link" href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </nav>
@@ -47,6 +47,9 @@
 
 
     <main>
+        <a href="#projects" class="banner__btn">
+            <img src="/img/banner/arrow.svg" alt="arrow">
+        </a>
         <section class="banner">
             <div class="slick">
                 <h1 class="banner__title">SIMPLE & MODERN 0</h1>
@@ -69,7 +72,10 @@
                 <span class="banner__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</span>
             </div>
         </section>
-        <section class="projects">
+
+
+        <section id="projects" class="projects">
+
             <div class="wrapper projects__wrapper">
                 <h2 class="projects__title">WHAT WE DO</h2>
                 <div class="project__trade-center">
@@ -110,7 +116,7 @@
                 </div>
             </div>
         </section>
-        <section class="news">
+        <section id="news" class="news">
             <div class="news__wrapper">
                 <h2 class="news__title">Latest news</h2>
                 <div class="slider">
@@ -188,9 +194,9 @@
                 </div>
             </div>
         </section>
-        <section class="gallery">
+        <section id="gallery" class="gallery">
             <div class="gallery__wrapper">
-                <h2 class="gallery__title">WHAT WE DO</h2>
+                <h2 class="gallery__title">GALLERY</h2>
                 <div class="gallery__first">
                     <div class="gallery__img one"><img class="gallery360" src="/img/galery/360.png" alt=""><img
                             src="/img/galery/gallery-1.png" alt=""></div>
@@ -204,9 +210,9 @@
                 </a>
             </div>
         </section>
-        <section class="section-map">
+        <section id="contact" class="section-map">
             <div id="map"></div>
-            <div class="form">
+            <div  class="form">
                 <h2 class="form__title">Get in touch</h2>
                 <div class="form__flex">
                     <div class="form__info">
@@ -263,6 +269,7 @@
             ({ key: "AIzaSyActQATaYKMd2RfNa_4bmGHCjZebLfNwlc", v: "weekly" });</script>
     <script defer src="js/script.js"></script>
     <script defer src="js/map.js"></script>
+    <script defer src="js/scrollToBlock.js"></script>
 
 </body>
 
