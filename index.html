@@ -29,7 +29,7 @@
                     <li class="header__item">
                         <a class="header__link" href="#">CONTACT</a>
                     </li>
-                </ul>f
+                </ul>
             </nav>
             <div class="header__social">
                 <div class="social__circle">
@@ -192,7 +192,8 @@
             <div class="gallery__wrapper">
                 <h2 class="gallery__title">WHAT WE DO</h2>
                 <div class="gallery__first">
-                    <div class="gallery__img one"><img class="gallery360" src="/img/galery/360.png" alt=""><img src="/img/galery/gallery-1.png" alt=""></div>
+                    <div class="gallery__img one"><img class="gallery360" src="/img/galery/360.png" alt=""><img
+                            src="/img/galery/gallery-1.png" alt=""></div>
                     <div class="gallery__img two"><img src="/img/galery/gallery-2.png" alt=""></div>
                     <div class="gallery__img three"><img src="/img/galery/gallery-3.png" alt=""></div>
                     <div class="gallery__img four"><img src="/img/galery/gallery-4.png" alt=""></div>
@@ -205,14 +206,43 @@
         </section>
         <section class="section-map">
             <div id="map"></div>
+            <div class="form">
+                <h2 class="form__title">Get in touch</h2>
+                <div class="form__flex">
+                    <div class="form__info">
+                        <ul class="form__list">
+                            <li class="list__item">
+                                91 Nolan Extensions Suite 670
+                            </li>
+                            <li class="list__item">
+                                +001 356-868-2454
+                            </li>
+                            <li class="list__item">
+                                montichello@service.com
+                            </li>
+                            <li class="list__item">
+                                From 07:05AM to 19:30PM
+                            </li>
+                        </ul>
+                    </div>
+                    <form>
+                        <input class="form__input" placeholder="Name" id="nameForm" type="text">
+                        <input class="form__input" placeholder="Email" id="emailForm" type="email">
+                        <button class="form__btn" id="btnForm">Submit</button>
+                    </form>
+                </div>
+            </div>
         </section>
+
     </main>
-    <footer></footer>
+    <footer style="height: 700px;background-color: violet;">
+
+    </footer>
 
     <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script defer src="js/slick.min.js"></script>
-    <script defer>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-        ({key: "AIzaSyActQATaYKMd2RfNa_4bmGHCjZebLfNwlc", v: "weekly"});</script>
+    <script defer>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+            ({ key: "AIzaSyActQATaYKMd2RfNa_4bmGHCjZebLfNwlc", v: "weekly" });</script>
     <script defer src="js/script.js"></script>
     <script defer src="js/map.js"></script>
 

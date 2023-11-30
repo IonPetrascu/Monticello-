@@ -1,0 +1,107 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.form {
+    width: 700px;
+    min-height: 450px;
+    margin: 0 auto;
+    padding: 90px 60px 68px;
+    background-color: $white;
+    position: absolute;
+    bottom: -23%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.form__title {
+    @include title();
+    text-align: center;
+    position: relative;
+    margin-bottom: 42px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 1px;
+        background-color: $main-color;
+    }
+}
+
+.form__flex {
+    display: flex;
+    gap: 54px;
+
+}
+
+
+.form__list {
+    display: flex;
+    min-width: 280px;
+    gap: 28px;
+    flex-direction: column;
+}
+
+.list__item {
+    @include description();
+    line-height: 28px;
+    position: relative;
+
+}
+.list__item::before{
+    content: "";
+    position: absolute;
+    left: -24px;
+    top: 50%;
+    transform: translateY(-50%);
+   
+}
+.list__item:nth-child(1)::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f3c5";
+}
+.list__item:nth-child(2)::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f095";
+ 
+}
+.list__item:nth-child(3)::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f01c";
+}
+.list__item:nth-child(4)::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f017";
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 33px;
+}
+
+.form__input {
+    padding: 5px 5px 14px 0px;
+    border: none;
+    border-bottom: 1px solid $main-color;
+}
+.form__input::placeholder{
+    color: $main-color;
+    opacity: 0.5;
+    @include description();
+    line-height: 27px;
+    color: $black;
+}
+.form__input:focus{
+    outline: none;
+}
+
+.form__btn {
+    @include btn-default(12px, 34px);
+    margin-left: auto;
+    font-size: 18px;
+    line-height: 27px;
+   
+}
