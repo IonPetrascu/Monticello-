@@ -1217,6 +1217,7 @@ main {
   text-align: center;
   position: relative;
   margin-bottom: 42px;
+  font-size: clamp(1.875rem, 0.986vw + 1.567rem, 2.75rem);
 }
 .form__title:before {
   content: "";
@@ -1257,6 +1258,7 @@ main {
   color: #2C4058;
   line-height: 28px;
   position: relative;
+  font-size: clamp(1rem, 0.141vw + 0.956rem, 1.125rem);
 }
 
 .list__item::before {
@@ -1320,6 +1322,7 @@ form {
   color: #2C4058;
   line-height: 27px;
   color: #000;
+  font-size: clamp(1rem, 0.141vw + 0.956rem, 1.125rem);
 }
 
 .form__input::-moz-placeholder {
@@ -1332,6 +1335,7 @@ form {
   color: #2C4058;
   line-height: 27px;
   color: #000;
+  font-size: clamp(1rem, 0.141vw + 0.956rem, 1.125rem);
 }
 
 .form__input:-ms-input-placeholder {
@@ -1344,6 +1348,7 @@ form {
   color: #2C4058;
   line-height: 27px;
   color: #000;
+  font-size: clamp(1rem, 0.141vw + 0.956rem, 1.125rem);
 }
 
 .form__input::-ms-input-placeholder {
@@ -1356,6 +1361,7 @@ form {
   color: #2C4058;
   line-height: 27px;
   color: #000;
+  font-size: clamp(1rem, 0.141vw + 0.956rem, 1.125rem);
 }
 
 .form__input::placeholder {
@@ -1368,6 +1374,7 @@ form {
   color: #2C4058;
   line-height: 27px;
   color: #000;
+  font-size: clamp(1rem, 0.141vw + 0.956rem, 1.125rem);
 }
 
 .form__input:focus {
@@ -1384,10 +1391,41 @@ form {
   background-color: transparent;
   cursor: pointer;
   margin-left: auto;
-  font-size: 18px;
   line-height: 27px;
+  font-size: clamp(1rem, 0.141vw + 0.956rem, 1.125rem);
 }
 
+@media screen and (max-width: 700px) {
+  .form {
+    width: clamp(280px, 80%, 700px);
+  }
+  .form__flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .list__item {
+    text-align: center;
+  }
+  .form__btn {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .form {
+    width: 100%;
+    padding: 20px;
+    bottom: -50%;
+  }
+  .list__item::before {
+    left: 10px;
+  }
+  .form__title:before {
+    display: none;
+  }
+}
 footer {
   background: url(/img/footer/bg.png);
   background-repeat: no-repeat;

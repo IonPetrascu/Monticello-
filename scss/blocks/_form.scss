@@ -23,6 +23,7 @@
     text-align: center;
     position: relative;
     margin-bottom: 42px;
+    font-size: clamp(1.875rem, 0.986vw + 1.567rem, 2.75rem);
 
     &:before {
         content: "";
@@ -48,12 +49,14 @@
     min-width: 280px;
     gap: 28px;
     flex-direction: column;
+  
 }
 
 .list__item {
     @include description();
     line-height: 28px;
     position: relative;
+    font-size: clamp(1rem, 0.141vw + 0.956rem, 1.125rem);
 
 }
 .list__item::before{
@@ -98,6 +101,7 @@ form {
     @include description();
     line-height: 27px;
     color: $black;
+    font-size: clamp(1rem, 0.141vw + 0.956rem, 1.125rem);
 }
 .form__input:focus{
     outline: none;
@@ -106,7 +110,42 @@ form {
 .form__btn {
     @include btn-default(12px, 34px);
     margin-left: auto;
-    font-size: 18px;
+   
     line-height: 27px;
+    font-size: clamp(1rem, 0.141vw + 0.956rem, 1.125rem);
    
 }
+
+//media
+
+@media screen and (max-width: 700px) {
+    .form{
+      width: clamp(280px, 80%, 700px);
+    }
+    .form__flex{
+        flex-wrap: wrap;
+       justify-content: center;
+    }
+    .list__item{
+        text-align: center;
+    }
+    .form__btn{
+        margin: 0;
+    }
+   }
+@media screen and (max-width: 500px) {
+    .form{
+        width: 100%;
+     padding: 20px;
+     bottom: -50%;
+    }
+    .list__item::before{
+        left: 10px;
+    }
+    .form__title:before{
+        display: none;
+    }
+    .form__flex{
+        gap: 20px;
+    }
+   }
