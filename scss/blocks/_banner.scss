@@ -8,9 +8,10 @@
 
 .slick {
     height: 100vh;
-    background: linear-gradient(243deg, #7E5AFF 16.9%, #55B7FF 83.27%),url(/img/banner.png);
+    background: url(/img/banner/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
