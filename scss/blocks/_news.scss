@@ -20,10 +20,11 @@
 
 .news__title {
     @include title();
-    color: $main-color;
+    color: $white;
     text-align: center;
     margin-bottom: 89px;
     position: relative;
+    font-size: clamp(1.875rem, 0.986vw + 1.567rem, 2.75rem);
 
     &:before {
         content: "";
@@ -33,7 +34,7 @@
         transform: translateX(-50%);
         width: 100px;
         height: 1px;
-        background-color: $main-color;
+        background-color: $white;
     }
 }
 
@@ -60,7 +61,7 @@
     h3 {
         color: $main-color;
         font-family: $font-main;
-        font-size: 22px;
+        font-size: clamp(1.875rem, 0.986vw + 1.567rem, 2.75rem);
         font-weight: 700;
         margin-bottom: 15px;
     }
@@ -195,3 +196,61 @@
     transform: translateY(-50%);
 
 }
+
+//media
+@media screen and (max-width: 1360px) {
+   .news{
+    height: 840px
+   }
+   .news__wrapper{
+    padding: 60px 10px ;
+   }
+    .news .next-arrow{
+        top: 18%;
+        right: 39%;
+        transform: translateX(50%);
+    }
+    .news .priv-arrow{
+        top: 18%;
+        left: 35%;
+        transform: translateX(50%);
+    }
+    .news .slick-dots{
+        bottom: -20px;
+    }
+   
+}
+@media screen and (max-width: 700px) {
+  
+    .news .slick-track{
+        gap: 0px;
+    }
+    .news .next-arrow{
+        top: 15%;
+        
+    }
+    .news .priv-arrow{
+        top: 15%;
+        
+    }
+    .news{
+        height: 1000px;
+    }
+}
+@media screen and (max-width: 500px) {
+  
+    .news{
+        height: 800px;
+    }
+    .news .slick-dots{
+     
+    }
+   
+}
+@media screen and (max-width: 300px) {
+    .news__title{
+        margin-bottom: 20px;
+    }
+    
+}
+

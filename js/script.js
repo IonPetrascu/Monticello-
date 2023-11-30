@@ -22,17 +22,35 @@ $('.slider').slick({
 	autoplaySpeed:4000,
 	responsive:[
 		{
-			breakpoint: 900,
+			breakpoint: 1000,
 			settings: {
 				slidesToShow:2
 			}
 		},
 		{
-			breakpoint: 550,
+			breakpoint: 700,
 			settings: {
-				slidesToShow:1
+				slidesToShow:1,
+				
 			}
-		}
+		},
+		{
+			breakpoint: 500,
+			settings: {
+				slidesToShow:1,
+				dots:false,
+			}
+		},
+		{
+			breakpoint: 400,
+			settings: {
+				slidesToShow:1,
+				dots:false,
+				prevArrow:false,
+				nextArrow:false,
+			}
+		},
+
 	]
 });
   });

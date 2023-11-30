@@ -444,7 +444,7 @@ main {
   }
   .banner .slick-dots {
     right: 25px;
-    top: 40%;
+    top: 50%;
   }
   .slick {
     height: 70vh;
@@ -678,10 +678,11 @@ main {
   font-family: "Montserrat", sans-serif;
   font-size: 44px;
   font-weight: 700;
-  color: #2C4058;
+  color: #fff;
   text-align: center;
   margin-bottom: 89px;
   position: relative;
+  font-size: clamp(1.875rem, 0.986vw + 1.567rem, 2.75rem);
 }
 .news__title:before {
   content: "";
@@ -692,7 +693,7 @@ main {
           transform: translateX(-50%);
   width: 100px;
   height: 1px;
-  background-color: #2C4058;
+  background-color: #fff;
 }
 
 .slider {
@@ -717,7 +718,7 @@ main {
 .slide h3 {
   color: #2C4058;
   font-family: "Montserrat", sans-serif;
-  font-size: 22px;
+  font-size: clamp(1.875rem, 0.986vw + 1.567rem, 2.75rem);
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -870,6 +871,53 @@ main {
           transform: translateY(-50%);
 }
 
+@media screen and (max-width: 1360px) {
+  .news {
+    height: 840px;
+  }
+  .news__wrapper {
+    padding: 60px 10px;
+  }
+  .news .next-arrow {
+    top: 18%;
+    right: 39%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  .news .priv-arrow {
+    top: 18%;
+    left: 35%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  .news .slick-dots {
+    bottom: -20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .news .slick-track {
+    gap: 0px;
+  }
+  .news .next-arrow {
+    top: 15%;
+  }
+  .news .priv-arrow {
+    top: 15%;
+  }
+  .news {
+    height: 1000px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .news {
+    height: 800px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .news__title {
+    margin-bottom: 20px;
+  }
+}
 .gallery {
   padding-top: 170px;
   padding-bottom: 250px;
