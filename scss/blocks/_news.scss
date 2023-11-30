@@ -39,16 +39,9 @@
 }
 
 .slide {
-
     width: 360px;
   background-color: $white;
 }
-
-.news {}
-
-.news__wrapper {}
-
-.news__title {}
 
 .slider {
     position: initial;
@@ -114,23 +107,6 @@
 
 }
 
-
-
-
-
-/* Слайдер */
-.news .slick-slider {}
-
-/* Слайдер запущен */
-.news .slick-slider.slick-initialized {}
-
-/* Слайдер с точками */
-.news .slick-slider.slick-dotted {}
-
-/* Ограничивающая оболочка */
-.news .slick-list {}
-
-/* Лента слайдов */
 .news .slick-track {
     display: flex;
     align-items:stretch;
@@ -138,25 +114,6 @@
     height: auto !important;
 }
 
-/* Слайд */
-.news .slick-slide {}
-
-/* Слайд активный (показывается) */
-.news .slick-slide.slick-active {}
-
-/* Слайд основной */
-.news .slick-slide.slick-current {}
-
-/* Слайд по центру */
-.news .slick-slide.slick-center {}
-
-/* Клонированный слайд */
-.news .slick-slide.slick-cloned {}
-
-/* Стрелка */
-.news .slick-arrow {
-    
-}
 .news .slick-dots{
     position: absolute;
     bottom: 143px;
@@ -180,12 +137,6 @@
     background-color: $white;
 }
 
-
-
-
-
-
-/* Стрелка влево */
 .fa-solid{
     font-size: 13px;
     width: 40px;
@@ -226,7 +177,6 @@
 
 }
 
-/* Стрелка вправо */
 .news .slick-arrow.slick-next {
 width: 40px;
     height: 40px;
@@ -236,22 +186,3 @@ width: 40px;
     transform: translateY(-50%);
  
 }
-
-
-
-
-
-
-/* Стрелка не активная */
-.news .slick-arrow.slick-disabled {}
-
-/* Точки (булиты) */
-.news .slick-dots {}
-
-.news .slick-dots li {}
-
-/* Активная точка */
-.news .slick-dots li.slick-active {}
-
-/* Элемент точки */
-.news .slick-dots li button {}

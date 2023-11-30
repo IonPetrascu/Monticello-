@@ -19,7 +19,7 @@ $('.slider').slick({
 	prevArrow:'<span class="priv-arrow"><i class="fa-solid fa-angle-left"></i></span>',
 	nextArrow:'<span class="next-arrow"><i class="fa-solid fa-angle-right"></i></span>',
 	arrow:true,
-	autoplaySpeed:100000,
+	autoplaySpeed:4000,
 	responsive:[
 		{
 			breakpoint: 900,

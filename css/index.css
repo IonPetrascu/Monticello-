@@ -561,11 +561,6 @@ body {
   font-weight: 400;
 }
 
-/* Слайдер */
-/* Слайдер запущен */
-/* Слайдер с точками */
-/* Ограничивающая оболочка */
-/* Лента слайдов */
 .news .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -577,12 +572,6 @@ body {
   height: auto !important;
 }
 
-/* Слайд */
-/* Слайд активный (показывается) */
-/* Слайд основной */
-/* Слайд по центру */
-/* Клонированный слайд */
-/* Стрелка */
 .news .slick-dots {
   position: absolute;
   bottom: 143px;
@@ -610,7 +599,6 @@ body {
   background-color: #fff;
 }
 
-/* Стрелка влево */
 .fa-solid {
   font-size: 13px;
   width: 40px;
@@ -657,7 +645,6 @@ body {
   cursor: pointer;
 }
 
-/* Стрелка вправо */
 .news .slick-arrow.slick-next {
   width: 40px;
   height: 40px;
@@ -668,10 +655,6 @@ body {
           transform: translateY(-50%);
 }
 
-/* Стрелка не активная */
-/* Точки (булиты) */
-/* Активная точка */
-/* Элемент точки */
 .gallery {
   padding-top: 170px;
   padding-bottom: 250px;
@@ -789,3 +772,8 @@ body {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
 }
+
+#map {
+  height: 700px;
+}
+/*# sourceMappingURL=index.css.map */
