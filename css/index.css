@@ -95,6 +95,7 @@ main {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 4;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -295,7 +296,7 @@ main {
 }
 .banner {
   z-index: 1;
-  /*  overflow: hidden; */
+  overflow: hidden;
   position: relative;
 }
 
@@ -473,6 +474,7 @@ main {
 .projects {
   overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 .projects__wrapper {
@@ -681,6 +683,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
 }
 
 .news__wrapper {
@@ -939,6 +942,7 @@ main {
   padding-top: 170px;
   padding-bottom: 250px;
   position: relative;
+  overflow: hidden;
 }
 
 .gallery__wrapper {
@@ -1224,6 +1228,7 @@ main {
   background-position: bottom;
   background-color: #fff;
   z-index: 4;
+  overflow: hidden;
 }
 
 .form__title {
@@ -1435,6 +1440,7 @@ form {
     width: 100%;
     padding: 20px;
     bottom: -50%;
+    position: relative;
   }
   .list__item::before {
     left: 10px;
@@ -1455,6 +1461,7 @@ footer {
   min-height: 550px;
   padding: 204px 0px 233px;
   position: relative;
+  overflow: hidden;
 }
 
 .footer__wrapper {
