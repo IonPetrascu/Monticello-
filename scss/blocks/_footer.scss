@@ -2,7 +2,7 @@
 @use "../base/mixins" as *;
 
 footer {
-    background:url(/img/footer/bg.png) ;
+    background: url(/img/footer/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -10,7 +10,7 @@ footer {
     min-height: 550px;
     padding: 204px 0px 233px;
     position: relative;
-    
+
 }
 
 
@@ -24,7 +24,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-  
+
 }
 
 .footer__links {
@@ -34,10 +34,11 @@ footer {
     align-items: center;
 
 }
-.footer__social{
+
+.footer__social {
     display: flex;
     gap: 20px;
-    
+
 }
 
 
@@ -45,4 +46,25 @@ footer {
     align-self: flex-start;
     font-size: 14px;
     font-family: $font-main;
+}
+
+@media screen and (max-width: 500px) {
+    .footer__wrapper{
+        display:block;
+    }
+    .footer__links {
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+    .footer__copyright{
+        margin-top: 30px;
+        display: block;
+        text-align: center;
+    }
+    footer{
+        min-height: 300px;
+        padding: 40px 0px 40px;
+      
+    }
 }
