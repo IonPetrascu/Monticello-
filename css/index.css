@@ -77,6 +77,10 @@ main {
   display: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* %extends-example{
     background-color: blue;
     border-radius: 40%;
@@ -199,7 +203,7 @@ main {
   left: 0;
   width: 100%;
   height: 100vh;
-  overflow: auto;
+  overflow: hidden;
   background-color: #55B7FF;
   z-index: 100;
 }
@@ -427,9 +431,22 @@ main {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1600px) {
+  .banner__btn {
+    top: 800px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .banner__btn {
+    top: 700px;
+  }
+}
 @media screen and (max-width: 800px) {
   .slick-track {
     height: 100% !important;
+  }
+  .banner__btn {
+    top: 700px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -668,7 +685,7 @@ main {
 
 .news__wrapper {
   max-width: 1190px;
-  padding: 185px 10px 213px 10px;
+  padding: 112px 10px 213px 10px;
   margin: 0 auto;
   position: relative;
 }
@@ -872,11 +889,8 @@ main {
 }
 
 @media screen and (max-width: 1360px) {
-  .news {
-    height: 840px;
-  }
   .news__wrapper {
-    padding: 60px 10px;
+    padding: 119px 10px;
   }
   .news .next-arrow {
     top: 18%;
@@ -906,6 +920,9 @@ main {
   }
   .news {
     height: 1000px;
+  }
+  .news .slick-dots {
+    display: none;
   }
 }
 @media screen and (max-width: 500px) {

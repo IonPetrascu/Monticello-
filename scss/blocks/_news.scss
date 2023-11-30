@@ -13,7 +13,7 @@
 
 .news__wrapper {
     max-width: 1190px;
-    padding: 185px 10px 213px 10px;
+    padding: 112px 10px 213px 10px;
     margin: 0 auto;
     position: relative;
 }
@@ -199,11 +199,9 @@
 
 //media
 @media screen and (max-width: 1360px) {
-   .news{
-    height: 840px
-   }
+   
    .news__wrapper{
-    padding: 60px 10px ;
+    padding: 119px 10px ;
    }
     .news .next-arrow{
         top: 18%;
@@ -236,15 +234,16 @@
     .news{
         height: 1000px;
     }
+    .news .slick-dots{
+        display: none;
+    }
 }
 @media screen and (max-width: 500px) {
   
     .news{
         height: 800px;
     }
-    .news .slick-dots{
-     
-    }
+   
    
 }
 @media screen and (max-width: 300px) {

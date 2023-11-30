@@ -6,7 +6,7 @@ $(document).ready(function(){
 		autoplay:true,
 		vertical:false,
 		speed:1000,
-		autoplaySpeed:1000000,
+		autoplaySpeed:4000,
 		
 });
 
@@ -54,3 +54,8 @@ $('.slider').slick({
 	]
 });
   });
+
+
+  //aos library
+  AOS.init();
+console.log("hello wwww");
