@@ -2,10 +2,12 @@
 @use "../base/mixins" as *;
 
 .news {
-  
-    background: linear-gradient(237deg, #24CCFA 11.16%, #3C7FD4 89.18%);
-   height: 1035px;
 
+    background: url(/img/news/Background.png);
+    height: 1035px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 
@@ -22,6 +24,7 @@
     text-align: center;
     margin-bottom: 89px;
     position: relative;
+
     &:before {
         content: "";
         position: absolute;
@@ -40,7 +43,7 @@
 
 .slide {
     width: 360px;
-  background-color: $white;
+    background-color: $white;
 }
 
 .slider {
@@ -82,12 +85,12 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    
+
 }
 
 .user__text {
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .user__Name {
@@ -109,12 +112,12 @@
 
 .news .slick-track {
     display: flex;
-    align-items:stretch;
+    align-items: stretch;
     gap: 30px;
     height: auto !important;
 }
 
-.news .slick-dots{
+.news .slick-dots {
     position: absolute;
     bottom: 143px;
     left: 50%;
@@ -122,7 +125,8 @@
     display: flex;
     gap: 40px;
 }
-.news .slick-dots li button{
+
+.news .slick-dots li button {
     background: transparent;
     width: 10px;
     height: 10px;
@@ -133,11 +137,11 @@
     cursor: pointer;
 }
 
-.news .slick-dots .slick-active button{
+.news .slick-dots .slick-active button {
     background-color: $white;
 }
 
-.fa-solid{
+.fa-solid {
     font-size: 13px;
     width: 40px;
     height: 40px;
@@ -145,16 +149,20 @@
     border: 1px solid $white;
     border-radius: 50%;
 }
-.fa-angle-right::before,.fa-angle-left::before{
+
+.fa-angle-right::before,
+.fa-angle-left::before {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: $white;
 }
-.news .slick-arrow.slick-prev{
-   font-size: 20px;
+
+.news .slick-arrow.slick-prev {
+    font-size: 20px;
 }
+
 .news .priv-arrow {
     width: 40px;
     height: 40px;
@@ -165,6 +173,7 @@
     left: -78px;
     cursor: pointer;
 }
+
 .news .next-arrow {
     width: 40px;
     height: 40px;
@@ -178,11 +187,11 @@
 }
 
 .news .slick-arrow.slick-next {
-width: 40px;
+    width: 40px;
     height: 40px;
     font-size: 0;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
- 
+
 }
