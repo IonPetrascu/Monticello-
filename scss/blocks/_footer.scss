@@ -2,25 +2,17 @@
 @use "../base/mixins" as *;
 
 footer {
-    background:url(/img/banner-bg.png) ;
+    background:url(/img/footer/bg.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: $white;
     min-height: 550px;
     padding: 204px 0px 233px;
     position: relative;
     
 }
-footer::after{
-    content: "";
-    background: linear-gradient(251deg, #7E5AFF -2.19%, #55B7FF 103.21%);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    z-index: -1;
-   /*  pointer-events: none; */
-   
-}
+
 
 .footer__wrapper {
     max-width: 1190px;
