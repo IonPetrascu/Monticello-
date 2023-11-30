@@ -16,7 +16,7 @@ const header = document.getElementById("header");
 const wrapper = document.querySelector(".wrapper")
 
 window.addEventListener("scroll",()=>{
-    if(window.scrollY > 150){
+    if(window.scrollY > 50){
         header.classList.add("header-scroll")
         wrapper.classList.add("wrapper-scroll")
     }else{

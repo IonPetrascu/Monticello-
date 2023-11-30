@@ -138,6 +138,12 @@
 
 //media 
 
+@media screen and (max-width: 800px) {
+  .slick-track{
+    height: 100% !important;
+  }
+
+}
 @media screen and (max-width: 600px) {
    .banner__title{
     line-height: 60px;
@@ -158,4 +164,6 @@
    .banner__btn{
     top: 470px;
    }
+
 }
+

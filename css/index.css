@@ -427,6 +427,11 @@ main {
   cursor: pointer;
 }
 
+@media screen and (max-width: 800px) {
+  .slick-track {
+    height: 100% !important;
+  }
+}
 @media screen and (max-width: 600px) {
   .banner__title {
     line-height: 60px;
@@ -471,6 +476,7 @@ main {
   font-size: 44px;
   font-weight: 700;
   position: relative;
+  font-size: clamp(1.875rem, 0.986vw + 1.567rem, 2.75rem);
 }
 .projects__title:before {
   content: "";
@@ -519,6 +525,7 @@ main {
   font-size: 44px;
   font-weight: 700;
   margin-bottom: 19px;
+  font-size: clamp(1.875rem, 0.986vw + 1.567rem, 2.75rem);
 }
 
 .projects__suptitle {
@@ -540,6 +547,7 @@ main {
   margin-bottom: 57px;
   line-height: 30px;
   max-width: 470px;
+  font-size: clamp(1rem, 0.141vw + 0.956rem, 1.125rem);
 }
 
 .projects-btn {
@@ -556,7 +564,7 @@ main {
 .projects__location {
   color: #000;
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  font-size: clamp(0.813rem, 0.141vw + 0.768rem, 0.938rem);
   font-style: italic;
   font-weight: 400;
   display: block;
@@ -600,6 +608,56 @@ main {
   z-index: -1;
 }
 
+@media screen and (max-width: 1100px) {
+  .project__trade-center {
+    padding-bottom: 0;
+  }
+  .projects__wrapper {
+    gap: 70px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .project__trade-center, .project__comerce-center {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  .trade-center__img, .commerce-center__img {
+    max-width: 400px;
+  }
+  .commerce-center__img {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .projects__info {
+    text-align: center;
+  }
+  .projects__location {
+    margin-top: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projects__wrapper {
+    gap: 100px;
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .projects__description {
+    margin-bottom: 20px;
+  }
+  .trade-center__img:before {
+    top: -30px;
+  }
+  .projects-btn {
+    display: block;
+  }
+}
 .news {
   background: url(/img/news/Background.png);
   height: 1035px;
