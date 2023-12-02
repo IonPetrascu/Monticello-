@@ -95,7 +95,6 @@ main {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 4;
-  overflow: hidden;
 }
 
 .wrapper {
@@ -302,7 +301,7 @@ main {
 
 .slick {
   height: 100vh;
-  background: url(/img/banner/bg.png);
+  background: url(./img/banner/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -678,7 +677,7 @@ main {
   }
 }
 .news {
-  background: url(/img/news/Background.png);
+  background: url(./img/news/Background.png);
   height: 1035px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1223,7 +1222,7 @@ main {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background: url(/img/form/city.png);
+  background: url(./img/form/city.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-color: #fff;
@@ -1453,7 +1452,7 @@ form {
   }
 }
 footer {
-  background: url(/img/footer/bg.png);
+  background: url(./img/footer/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
