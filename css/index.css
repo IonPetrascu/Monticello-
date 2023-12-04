@@ -484,7 +484,7 @@ main {
     height: 70vh;
   }
   .banner__btn {
-    top: 470px;
+    display: none;
   }
 }
 .projects {
@@ -593,6 +593,11 @@ main {
   border: 1px solid #2C4058;
   background-color: transparent;
   cursor: pointer;
+}
+.projects-btn:hover {
+  background-color: #7E5AFF;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .projects__location {
@@ -1017,6 +1022,11 @@ main {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+.gallery-btn:hover {
+  background-color: #7E5AFF;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .gallery__first {

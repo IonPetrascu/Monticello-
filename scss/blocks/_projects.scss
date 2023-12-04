@@ -89,7 +89,11 @@
 
 .projects-btn {
 
-    @include btn-default(16px, 41px)
+    @include btn-default(16px, 41px);
+    &:hover{
+        background-color: $bg-violet;
+        transition: all 0.4s ease-out;
+    }
 }
 
 .projects__location {
