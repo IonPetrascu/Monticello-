@@ -224,12 +224,10 @@
     .news .slick-track{
         gap: 0px;
     }
-    .news .next-arrow{
-        display: none;
-        
-    }
-    .news .priv-arrow{
-       display: none;
+ 
+  
+    .news .priv-arrow, .news .next-arrow{
+       display: none !important;
         
     }
     .news{
