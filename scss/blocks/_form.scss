@@ -11,7 +11,7 @@
     bottom: -23%;
     left: 50%;
     transform: translateX(-50%);
-    background: url(./img/form/city.png);
+    background: url(/img/form/city.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-color: $white;
@@ -130,7 +130,14 @@ form {
     line-height: 27px;
     font-size: clamp(1rem, 0.141vw + 0.956rem, 1.125rem);
 
+    &:hover {
+        background-color: $bg-violet;
+        color: $white;
+        transition:background-color 0.4s ease,color 0.4s ease-in ;
+        
+    }
 }
+
 
 //media
 

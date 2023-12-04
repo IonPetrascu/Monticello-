@@ -3,7 +3,7 @@
 
 .news {
 
-    background: url(./img/news/Background.png);
+    background: url(..//img/news/Background.png);
     height: 1035px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -205,12 +205,12 @@
     padding: 119px 10px ;
    }
     .news .next-arrow{
-        top: 18%;
+        top: -60px;
         right: 39%;
         transform: translateX(50%);
     }
     .news .priv-arrow{
-        top: 18%;
+        top: -60px;
         left: 35%;
         transform: translateX(50%);
     }
@@ -225,20 +225,22 @@
         gap: 0px;
     }
     .news .next-arrow{
-        top: 15%;
+        display: none;
         
     }
     .news .priv-arrow{
-        top: 15%;
+       display: none;
         
     }
     .news{
         height: 1000px;
     }
     .news .slick-dots{
-        display: none;
+        display: none !important;
     }
 }
+
+
 @media screen and (max-width: 500px) {
   
     .news{

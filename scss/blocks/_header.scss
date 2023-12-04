@@ -7,7 +7,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 4;
+    z-index: 5;
     
 }
 
@@ -35,7 +35,15 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    &:hover{
+        background-color: $white;
+        color: $black;
+        outline: 1px solid $white;
+        outline-offset: 7px;
+        transition:background-color 0.6s ease,color .4s ease-in-out,outline-offset 0.4s ease ;
+    }
 }
+
 
 .header__item {
     font-family: $font-accent;

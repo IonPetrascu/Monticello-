@@ -9,7 +9,7 @@
 
 .slick {
     height: 100vh;
-    background: url(./img/banner/bg.png);
+    background: url(../img/banner/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -62,9 +62,11 @@
 
 
 .banner .slick-dots>li>button {
-
+    cursor: pointer;
     font-size: 0;
+   
 }
+
 
 .banner .slick-dots {
     position: absolute;

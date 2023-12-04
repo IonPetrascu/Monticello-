@@ -54,5 +54,4 @@ async function initMap() {
 
 initMap();
 
-console.log("hello");
-/* 40.69268110625893, -73.91078558694308 */
+
